@@ -1,27 +1,39 @@
-# Pratica1Componentes
+# 📚 Exercício 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+### I.  Create two new Components (manually or with CLI): WarningAlert and SuccessAlert.
+<p>For this step I used the CLI to generate the components.</p>
 
-## Development server
+`ng g c WarningAlert`
+<br>
+`ng g c SuccessAlert`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### II. Output them beneath each other in the AppComponent.
+<p>Inside "app.component.html" I added the component tags.</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`<app-warning-alert></app-warning-alert>`
+<br>
+`<app-sucess-alert></app-sucess-alert>`
 
-## Build
+### III. Output a warning or success message in the Components.
+<p>Inside the ".component.html" of each component I added the text of the respective components.</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`<p>This is a Warning, you are in danger!</p>`
+<br>
+`<p>This is a Success Alert, you are safe!</p>`
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### IV. Style the Components appropriately (maybe some red/ green text?).
+<p>Within the ".css" file of each component I styled it as needed.</p>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`p{`
+<br>
+`padding: 20px;`
+<br>
+`background-color: color_here;`
+<br>
+`border: 1px solid color_here;`
+<br>
+`color: color_here;`
+<br>
+`}`
